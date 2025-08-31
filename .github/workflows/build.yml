@@ -22,8 +22,6 @@ jobs:
       - name: Generate Prisma
         run: npm run db:generate
 
-      - name: Generate Prisma client
-        run: cd packages/db && npx prisma generate && cd ../..
 
       - name: Run Build
         run: npm run build
